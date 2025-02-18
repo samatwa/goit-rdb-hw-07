@@ -1,6 +1,6 @@
 # goit-rdb-hw-07
 1)
- SELECT 
+SELECT 
 	id, 
   	date, 
 	 YEAR(date) as year,
@@ -21,4 +21,11 @@ SELECT
     	date, 
     	UNIX_TIMESTAMP(date) as timestamp_date
 FROM orders;
+
+4)
+SELECT COUNT(*) AS count_date_btw
+FROM orders
+WHERE date BETWEEN '1996-07-10 00:00:00' AND '1996-10-08 00:00:00';
+
+5)
 
