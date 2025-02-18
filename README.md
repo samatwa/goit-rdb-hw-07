@@ -15,3 +15,10 @@ SELECT
     	DATE_ADD(date, INTERVAL 1 DAY) as next_day
 FROM orders;
 
+3)
+SELECT 
+	id, 
+    	date, 
+    	UNIX_TIMESTAMP(date) as timestamp_date
+FROM orders;
+
